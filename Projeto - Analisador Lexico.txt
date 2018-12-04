@@ -1,0 +1,11 @@
+Tarefas a Seguir:
+
+Glauber:
+	-
+	-
+	-
+
+Ronaldo:
+	- Configurar Leitor e Escritor de Arquivos
+	- 
+	- 
