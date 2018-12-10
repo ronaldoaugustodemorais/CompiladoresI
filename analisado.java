@@ -4,25 +4,32 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-public class analisadoLexico {
+public class analisado
+{
 
-	public static void main(String[] args) {
+	public static void main(String[] args)
+	{
 		int numeroDaLinha = 0;
 		String letras, palavras = "";
-		Path caminho = Paths.get("C:/Users/comochega/Desktop/racket exercicio/programa.txt");
+		//Modificar caminho do arquivo, para ser lido diretamente do usuario.
+		Path caminho = Paths.get("D://test.txt");
 		
-		try {
+		try
+		{
 			byte[] texto = Files.readAllBytes(caminho);
 			String leitura = new String(texto);
 			
-			for (int i = 0; i < leitura.length(); i++) {
+			for (int i = 0; i < leitura.length(); i++)
+			{
 				//System.out.println(leitura.charAt(i));
 				letras = "" + leitura.charAt(i);
-				if(letras.equals("\n")){
+				if(letras.equals("\n"))
+				{
 					++numeroDaLinha;
 					System.out.println("quebra de linha " + numeroDaLinha);
 				}
-				if(letras.equals(" ")){
+				if(letras.equals(" "))
+				{
 					System.out.println("espaço");
 				}
 				//System.out.println(palavras);
@@ -32,10 +39,10 @@ public class analisadoLexico {
 			System.out.println("quebra de linha " + numeroDaLinha);
 			
 			//System.out.println(leitura);
-		} catch (Exception e) {
-			// TODO: handle exception
 		}
-		
-		
+		catch (Exception e)
+		{
+			// TODO: handle exception
+		}	
 	} 
 }
