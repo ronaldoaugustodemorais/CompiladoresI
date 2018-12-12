@@ -11,7 +11,9 @@ public class analisado
 	{
 		int numeroDaLinha = 0;
 		String letras, palavras = "";
+		
 		//Modificar caminho do arquivo, para ser lido diretamente do usuario.
+		
 		Path caminho = Paths.get("D://test.txt");
 		
 		try
