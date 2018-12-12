@@ -1,4 +1,4 @@
-import java.io.BufferedReader;
+﻿import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Scanner;
@@ -23,11 +23,11 @@ public class lerArquivo
       String linha = lerArq.readLine();
 
       while (linha != null)
-	  {
-        System.out.printf("%s\n", linha);
+	{
+ 	       System.out.printf("%s\n", linha);
  
-        linha = lerArq.readLine(); // lê da segunda até a última linha
-      }
+ 	       linha = lerArq.readLine();
+      	}
  
       arq.close();
     } catch (IOException e)
